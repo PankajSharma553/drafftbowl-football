@@ -8,11 +8,10 @@
 
 :root {
   /* color */
---steel-blue: #4682B4;
---lime-green: #32CD32; 
---white-color:#ffffff;
---black-color:#000000;
-
+  --steel-blue: #4682B4;
+  --lime-green: #32CD32;
+  --white-color: #ffffff;
+  --black-color: #000000;
 
   /* font family */
   --primary-font: "Roboto";
@@ -27,10 +26,12 @@ body {
   width: 100%;
   margin-inline: auto;
 }
-.img{
+
+.img {
   width: 100%;
   max-width: 100%;
 }
+
 body {
   font-family: var(--primary-font);
 }
@@ -230,7 +231,7 @@ textarea::placeholder {
   z-index: 5;
   transition: box-shadow 0.3s ease;
   background-color: var(--blue-light);
-background-color: var(--steel-blue);
+  background-color: var(--steel-blue);
 }
 
 .header_wrappr {
@@ -354,16 +355,17 @@ background-color: var(--steel-blue);
 
 
 /* banner section */
-.banner{
+.banner {
   width: 100%;
   overflow: hidden;
 }
-.banner_bg{
+
+.banner_bg {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
-  height:100vh;
+  height: 100vh;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -371,15 +373,18 @@ background-color: var(--steel-blue);
   margin-bottom: 40px;
 }
 
-.banner_bg--bg1{
+.banner_bg--bg1 {
   background-image: url("../images/banner1.webp");
 }
-.banner_bg--bg2{
+
+.banner_bg--bg2 {
   background-image: url("../images/banner2.jpg");
 }
-.banner_bg--bg3{
+
+.banner_bg--bg3 {
   background-image: url("../images/banner3.jpg");
 }
+
 /* .banner_bg::after {
   position: absolute;
   content: "";
@@ -462,7 +467,8 @@ background-color: var(--steel-blue);
   gap: 24px;
 }
 
-.why_card, .why_sec {
+.why_card,
+.why_sec {
   background-color: var(--white-color);
   width: 100%;
   border-radius: 8px;
@@ -708,8 +714,18 @@ background-color: var(--steel-blue);
   color: #333;
 }
 
+.testimonial_sec {
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .slick-slide {
   margin: 0 15px;
+}
+
+.testimonialSlider {
+  padding: 20px 0;
 }
 
 .slick-dots {
@@ -732,9 +748,14 @@ background-color: var(--steel-blue);
   opacity: 1;
   color: var(--blue-light);
 }
-.testimonial_icon{
-max-width:48px;
-height: 48px;
+
+.testimonial_icon {
+  max-width: 48px;
+  height: 48px;
+  background-image: url("../images/quote.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -1137,9 +1158,11 @@ height: 48px;
   box-shadow: rgb(7 7 7 / 10%) 0px 7px 29px 0px
     /* box-shadow: rgba(215, 124, 141, 0.6) 0px 7px 29px 0px; */
 }
-.banner--contact{
+
+.banner--contact {
   background-image: url("../images/contact-banner.jpg");
 }
+
 .contact_inner {
   display: flex;
   justify-content: space-between;
@@ -1150,13 +1173,15 @@ height: 48px;
   border: 1px solid #dee2e6;
   margin-bottom: 16px;
 }
+
 .contact_inner textarea:focus {
   color: var(--bs-body-color);
   background-color: var(--bs-body-bg);
   border-color: #86b7fe;
   outline: 0;
-  box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+  box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
 }
+
 .contact_left {
   width: 46%;
 }
@@ -1194,16 +1219,20 @@ height: 48px;
 .contact_left .submit_btn {
   margin-top: 16px;
 }
-.socials{
+
+.socials {
   margin-top: 10px;
 }
-.socials_wrapper{
+
+.socials_wrapper {
   display: inline-flex;
   gap: 10px;
 }
-.socials .sub_title{
+
+.socials .sub_title {
   margin-bottom: 4px;
 }
+
 .social_iconWrapp {
   border: 1px solid var(--black-color);
   border-radius: 4px;
@@ -1214,16 +1243,20 @@ height: 48px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-.social_iconWrapp:hover{
+
+.social_iconWrapp:hover {
   background-color: var(--blue-light);
   border-color: var(--blue-light);
 }
-.social_iconWrapp:hover .social_icon{
+
+.social_iconWrapp:hover .social_icon {
   filter: invert(1);
 }
-.social_iconWrapp:hover .social_icon--twitter{
+
+.social_iconWrapp:hover .social_icon--twitter {
   filter: invert(0);
 }
+
 .social_icon {
   background-repeat: no-repeat;
   background-size: contain;
@@ -1236,16 +1269,19 @@ height: 48px;
   transition: all 0.3s linear;
 }
 
-.social_icon--fb{
+.social_icon--fb {
   background-image: url("../images/fb.png");
 }
-.social_icon--twitter{
+
+.social_icon--twitter {
   background-image: url("../images/twitter.svg");
   filter: invert(1);
 }
-.social_icon--insta{
+
+.social_icon--insta {
   background-image: url("../images/insta.png");
 }
+
 /* =======================>>> */
 
 
@@ -2248,7 +2284,8 @@ fieldset {
   margin: 0 auto;
   position: relative;
 }
-.signup_inner::after{
+
+.signup_inner::after {
   position: absolute;
   top: 0;
   right: 0;
@@ -2420,8 +2457,9 @@ fieldset {
 .back-btn a:hover {
   opacity: 0.9;
 }
-.back-btn svg{
-filter: invert(1);
+
+.back-btn svg {
+  filter: invert(1);
 }
 
 .palyer-header {
@@ -2665,7 +2703,7 @@ td.player-dp img {
 
 .matches-table th {
   background: var(--pre-blue) !important;
-  color:var(--white-color) !important;
+  color: var(--white-color) !important;
 }
 
 .match-team-logo span {
@@ -2879,7 +2917,7 @@ table tr:nth-child(odd):hover {
 
 .fusball_leagues-inner-content table th {
   background: var(--pre-blue) !important;
-  color:var(--white-color) !important;
+  color: var(--white-color) !important;
 }
 
 section.destination.firsts {
@@ -3411,8 +3449,8 @@ span.edit_pan i {
 }
 
 .user-content-box button:hover {
-  background-color:var(--white-color);
-  color:var(--blue-light);
+  background-color: var(--white-color);
+  color: var(--blue-light);
   box-shadow: var(--pre-blue) 0px 3px 8px;
   border-color: var(--blue-light);
 }
@@ -3486,7 +3524,7 @@ td.match-score h4 {
   font-size: 22px;
   font-weight: 700;
   /* color: #000; */
-  color:var(--white-color);
+  color: var(--white-color);
   padding: 0 5px;
 }
 
@@ -3542,7 +3580,7 @@ td.match-score h4 {
 .plyr-headr .match-details h6 {
   font-size: 18px;
   margin-bottom: 10px;
-  color:var(--white-color);
+  color: var(--white-color);
   font-weight: 600;
 }
 
@@ -3550,14 +3588,14 @@ td.match-score h4 {
   font-size: 17px;
   margin-bottom: 10px;
   /* color: #000; */
-  color:var(--white-color);
+  color: var(--white-color);
 }
 
 .plyr-headr .match-details span {
   font-size: 14px;
   margin-bottom: 10px;
   /* color: #000; */
-  color:var(--white-color);
+  color: var(--white-color);
 }
 
 .fusball_leagues tbody tr td p {
@@ -4054,39 +4092,47 @@ fieldset {
 .banner_myMatches {
   background-image: url("../images/my_matches.jpg");
 }
-.matchDtls_banner{
+
+.matchDtls_banner {
   background-image: url("../images/match-detail-banner.jpg");
 
 }
 
 /* Footer Pages CSS End*/
 
-.gameMode{
+.gameMode {
   margin-block: 50px;
 }
-.gameMode_wrapper,.why_wrapper{
+
+.gameMode_wrapper,
+.why_wrapper {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
-.gameMode_heading{
+
+.gameMode_heading {
   text-align: center;
-  margin-bottom:24px;
+  margin-bottom: 24px;
 }
-.gameMode_inner{
+
+.gameMode_inner {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap:24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
-.gameMode_sec{
+
+.gameMode_sec {
   width: 100%;
- border-radius: 4px;
- box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-.gameMode_content{
+
+.gameMode_content {
   padding: 24px;
 }
-.gameMode_img{
+
+.gameMode_img {
   background-image: url("../images/gamode1.webp");
   height: 200px;
   width: 100%;
@@ -4096,7 +4142,8 @@ fieldset {
   border-radius: 4px 4px 0 0;
   position: relative;
 }
-.gameMode_img::after{
+
+.gameMode_img::after {
   top: 0;
   position: absolute;
   content: "";
@@ -4105,7 +4152,28 @@ fieldset {
   bottom: 0;
   background-color: rgba(0 0 0 / 50%);
 }
-.why_iconWrapp{
+
+.why_sec--two .why_icon {
+  background-image: url("../images/why2.png");
+}
+
+.why_sec--three .why_icon {
+  background-image: url("../images/why3.png");
+}
+
+.why_sec--four .why_icon {
+  background-image: url("../images/why4.png");
+}
+
+.why_sec--five .why_icon {
+  background-image: url("../images/why5.png");
+}
+
+.why_sec--six .why_icon {
+  background-image: url("../images/why6.png");
+}
+
+.why_iconWrapp {
   max-width: 60px;
   width: 100%;
   height: 60px;
@@ -4117,9 +4185,10 @@ fieldset {
   border: 1px solid var(--white-color);
   margin: 0 auto;
 }
-.why_icon{
-  background-image: url("../images/logo.png");
-  height:32px;
+
+.why_icon {
+  background-image: url("../images/why1.png");
+  height: 32px;
   width: 32px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4127,19 +4196,22 @@ fieldset {
   position: relative;
   filter: invert(1);
 }
-.why_sec{
+
+.why_sec {
   background-color: var(--steel-blue);
   padding: 12px 8px;
   border-radius: 4px;
   width: 100%;
   text-align: start;
 }
-.why_title{
+
+.why_title {
   font-size: 20px;
   font-weight: 500;
   color: var(--white-color);
   margin-bottom: 12px;
 }
-.why_desc{
+
+.why_desc {
   color: var(--white-color);
 }
