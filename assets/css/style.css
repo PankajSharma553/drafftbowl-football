@@ -126,7 +126,7 @@ a {
   font-weight: 400;
   line-height: normal;
   /* color: var(--white-color); */
-  margin-bottom: 30px;
+  margin-bottom:48px;
 }
 
 title {
@@ -2029,8 +2029,6 @@ img {
 .after-banner-text-wrap p {
   text-align: center;
 }
-
-
 
 
 /* Game Instructions Page CSS Start */
@@ -4111,13 +4109,10 @@ fieldset {
   margin: 0 auto;
 }
 
-.gameMode_heading {
-  text-align: center;
-  margin-bottom: 24px;
-}
+
 
 .gameMode_title {
-  font-size: 20px;
+  font-size: 24px;
   color: var(--steel-blue);
   font-weight: 500;
   margin-bottom: 8px;
@@ -4140,7 +4135,7 @@ fieldset {
 }
 
 .gameMode_img {
-  background-image: url("../images/gamode1.webp");
+ 
   height: 200px;
   width: 100%;
   background-repeat: no-repeat;
@@ -4148,6 +4143,24 @@ fieldset {
   background-position: center;
   border-radius: 4px 4px 0 0;
   position: relative;
+}
+.gameMode_sec--one .gameMode_img {
+  background-image: url("../images/gamode1.webp");
+}
+.gameMode_sec--two .gameMode_img {
+  background-image: url("../images/gameMode2.jpg");
+}
+.gameMode_sec--three .gameMode_img {
+  background-image: url("../images/gameMode3.jpg");
+}
+.gameMode_sec--four .gameMode_img {
+  background-image: url("../images/gameMode4.jpg");
+}
+.gameMode_sec--five .gameMode_img {
+  background-image: url("../images/gameMode5.jpg");
+}
+.gameMode_sec--six .gameMode_img {
+  background-image: url("../images/gameMode6.jpg");
 }
 
 .gameMode_img::after {
@@ -4157,7 +4170,7 @@ fieldset {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(0 0 0 / 50%);
+  background-color: rgba(0 0 0 / 30%);
 }
 
 .why_sec--two .why_icon {
