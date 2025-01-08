@@ -4116,6 +4116,13 @@ fieldset {
   margin-bottom: 24px;
 }
 
+.gameMode_title {
+  font-size: 20px;
+  color: var(--steel-blue);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
 .gameMode_inner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
