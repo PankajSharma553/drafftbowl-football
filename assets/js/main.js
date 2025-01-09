@@ -3,10 +3,10 @@ $(document).ready(function () {
         // centerMode: true,
         slidesToShow: 1,
         autoplay: true,
-        arrows: true,
-        dots:false,
+        arrows: false,
+        dots:true,
         speed: 500,
-        autoplaySpeed:800,
+        autoplaySpeed:80000000,
 
     });
 });
@@ -16,10 +16,10 @@ $(document).ready(function () {
     $('.testimonialSlider').slick({
         slidesToShow: 3,
         autoplay: true,
-        arrows: true,
-        dots:false,
+        arrows: false,
+        dots:true,
         speed: 500,
-        autoplaySpeed:800,
+        autoplaySpeed:8000000,
 
     });
 });

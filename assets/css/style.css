@@ -351,9 +351,6 @@ textarea::placeholder {
   background-color: var(--black-color);
   box-shadow: rgb(238 238 238 / 56%) 0px 7px 29px 0px;
 }
-
-
-
 /* banner section */
 .banner {
   width: 100%;
@@ -370,7 +367,6 @@ textarea::placeholder {
   justify-content: start;
   align-items: center;
   /* position: relative; */
-  margin-bottom: 40px;
 }
 
 .banner_bg--bg1 {
@@ -719,36 +715,6 @@ textarea::placeholder {
   padding: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
-.slick-slide {
-  margin: 0 15px;
-}
-
-.testimonialSlider {
-  padding: 20px 0;
-}
-
-.slick-dots {
-  list-style-type: disc;
-}
-
-.slick-dots li {
-  font-size: 12px;
-}
-
-.slick-dots li button:before {
-  font-size: 30px;
-  width: 24px;
-  height: 24px;
-  opacity: 1;
-
-}
-
-.slick-dots li.slick-active button:before {
-  opacity: 1;
-  color: var(--blue-light);
-}
-
 .testimonial_icon {
   max-width: 48px;
   height: 48px;
@@ -4127,7 +4093,12 @@ fieldset {
 .gameMode_sec {
   width: 100%;
   border-radius: 4px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: 0.3s ease-in-out;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* background-color: var(--steel-blue); */
+}
+.gameMode_sec:hover{
+  transform: translateY(-10px);
 }
 
 .gameMode_content {
@@ -4223,6 +4194,11 @@ fieldset {
   border-radius: 4px;
   width: 100%;
   text-align: start;
+  transition: 0.3s ease-in-out;
+}
+.why_sec:hover {
+ transform: translateY(-10px);
+ 
 }
 
 .why_title {
@@ -4233,5 +4209,58 @@ fieldset {
 }
 
 .why_desc {
+  color: var(--white-color);
+}
+
+/* fvsgd */
+/* .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  border: 2px solid green;
+  padding: 0;
+  cursor: pointer;
+  width: 120px;
+  background: green;
+  border-radius: 4px;
+} */
+
+
+.banner .slick-dots {
+  bottom: 15%;
+  text-align: start;
+  margin-left: 2%;
+}
+
+
+.banner .slick-dots li {
+  width: 37px;
+  height: 4px;
+  border-radius: 5px;
+  display: inline-block;
+  background:var(--steel-blue);
+  margin: 3px;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0.7;
+}
+.banner li.slick-active {
+  background: var(--white-color);
+}
+.banner .slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+
+.slick-dots li button {
+  background-color: var(--steel-blue);
+}
+.slick-dots li button:hover {
+  background-color: var(--steel-blue);
+  opacity: 0.5;
+}
+.testimonial .slick-dots li button:before {
+  font-size:24px;
   color: var(--white-color);
 }
